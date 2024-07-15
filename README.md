@@ -1,5 +1,5 @@
-# Titanic-analysis
-#importing libararies
+# TITANIC-ANALYSIS
+# importing libararies
 import pandas as pd 
 import matplotlib.pyplot as plt
 
