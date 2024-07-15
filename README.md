@@ -16,5 +16,13 @@ data.shape
 data.describe()
 # if i want to check that how many survived
 data['Survived'].value_counts()
-
-
+#visualizing count of survival wrt pclass
+import seaborn as sns
+sns.countplot(x=data['Pclass'], hue=data['Survived'])
+#visualizing count of survival wrt gender
+import seaborn as sns
+sns.countplot(x=data['Sex'], hue=data['Survived'])
+#survival rate by sex
+df.group('sex')[['Survived']].mean()
+#conclusion
+females survived more then males 
