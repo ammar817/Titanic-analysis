@@ -12,15 +12,16 @@ plt.savefig("scatter.png")
 plt.show()
 # if i want to check that the values are null or not
 data.isnull().sum()
-#by applying all the function
+# no of rows and colomns 
 data.shape
+# statistical measures
 data.describe()
 # if i want to check that how many survived
 data['Survived'].value_counts()
-#visualizing count of survival wrt pclass
+# visualizing count of survival wrt pclass
 import seaborn as sns
 sns.countplot(x=data['Pclass'], hue=data['Survived'])
-#visualizing count of survival wrt gender
+# visualizing count of survival wrt gender
 import seaborn as sns
 sns.countplot(x=data['Sex'], hue=data['Survived'])
 # survival rate by sex
